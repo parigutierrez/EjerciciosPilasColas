@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var nombres = [];
+
+function Persona() {
+ var elementos = [];
+
+  this.push = function(elemento){
+    elementos.push(elemento);
+  }
+  this.isEmpty = function(){
+    return elementos.length == 0;
+  }
+
+}
+
+var nombre = new Persona();
+var nombre = [];
+nombre.push("Ana ");
+nombre.push("Edith ");
+nombre.push("Sue ");
+nombre.push("Vale ");
+nombre.push("Mimi ");
+
+
+var apellido = new Persona();
+var apellido = [];
+apellido.push("Salazar");
+apellido.push("Mandujano");
+apellido.push("Martinez");
+apellido.push("de Leon");
+apellido.push("Arizmendi");
+
+for(var i = 0; i < 5; i++ ){
+  nombres.push(nombre.pop()+apellido.pop());
+}
+
+console.log(nombres);
+
+
+    </script>
+  </body>
+</html>
